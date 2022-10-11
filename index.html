@@ -4,7 +4,8 @@
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <link href='../www.blogger.com/static/v1/widgets/55013136-widget_css_bundle.css' rel='stylesheet' type='text/css' />
-<link href='manifest.html' rel='manifest' />
+<link rel="manifest" href="./manifest.webmanifest">
+  <!-- favicon -->
 <link href='../i.ibb.co/9WFTXFL/images-1-7-removebg-preview.png' rel='apple-touch-icon' sizes='180x180' />
 <link href='../lh3.googleusercontent.com/-nPvyYER_TJo/YdsdE67ba5I/AAAAAAAAHao/TVq1pMNbN2QdIO7_k4qB9KSl3iYKQRFwACNcBGAsYHQ/s16000/1641749773766930-0.png' rel='icon' sizes='32x32' type='image/png' />
 <link href='../external.html?link=https://blogger.googleusercontent.com/img/a/AVvXsEjcjc6524wR6BJSi_Ras-kIky7m7HYPCw4FpQUE5Sj4VJQtz2KUxmZ3RF1-I6qpPTaXrtyc91NR6rxbjwEQUR-uOktLAtNVlRbZyCO3h9FfzitU4R5GUyyPhMDTnnlxJ1W5rM-tMd4JasjJT1NblemmT1cxtN7GPlpn7sr5NPi-jROXVvZXEF0FYTFwRw' rel='icon' sizes='16x16' type='image/png' />
@@ -1643,22 +1644,13 @@ var message="NoRightClicking"; function defeatIE() {if (document.all) {(message)
 <script>/*<![CDATA[*/ 
   const installButton = document.getElementById("vivek_maurya");window.addEventListener("beforeinstallprompt", e => {e.preventDefault();deferredPrompt = e;installButton.hidden = false;installButton.addEventListener("click", installApp);});function installApp() {deferredPrompt.prompt();installButton.disabled = true;deferredPrompt.userChoice.then(choiceResult => {if (choiceResult.outcome === "accepted") {installButton.hidden = true;} else {}installButton.disabled = false;deferredPrompt = null;});}window.addEventListener("appinstalled", evt => {console.log("appinstalled fired", evt);});
   /*]]>*/</script>
-<script type='text/javascript'>
 
-  //<![CDATA[
-
-  if('serviceWorker' in navigator) {
-
-    navigator.serviceWorker
-
-               .register('sw.html')
-
-                          .then(function() { console.log("Service Worker Registered"); });
-
-                          }
-
-  //]]> 
-
+<script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js');
+    } else {
+      alert('ServiceWorker unavailable');
+    }
   </script>
 <script type="text/javascript" src="../www.blogger.com/static/v1/widgets/829820975-widgets.js"></script>
 <script type='text/javascript'>
