@@ -1,9 +1,9 @@
 {
-  "name": "Landscape Fullscreen PWA",
-  "short_name": "Landscape Full",
+  "name": "PahilaGana",
+  "short_name": "PahilaGana",
   "start_url": "./",
   "display": "fullscreen",
-  "orientation": "landscape",
+  "orientation": "horizontal",
   "background_color": "#546e7a",
   "theme_color": "#29434e",
   "icons": [
