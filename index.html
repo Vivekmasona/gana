@@ -1,7 +1,6 @@
 <html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='../external.html?link=http://www.google.com/2005/gml/expr'>
 
-<!-- Mirrored from www.pahilagana.xyz/ by HTTrack Website Copier/3.x [XR&CO'2017], Mon, 10 Oct 2022 20:10:17 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
 <head>
 <link href='../www.blogger.com/static/v1/widgets/55013136-widget_css_bundle.css' rel='stylesheet' type='text/css' />
 <link href='manifest.html' rel='manifest' />
@@ -9,15 +8,14 @@
 <link href='../lh3.googleusercontent.com/-nPvyYER_TJo/YdsdE67ba5I/AAAAAAAAHao/TVq1pMNbN2QdIO7_k4qB9KSl3iYKQRFwACNcBGAsYHQ/s16000/1641749773766930-0.png' rel='icon' sizes='32x32' type='image/png' />
 <link href='../external.html?link=https://blogger.googleusercontent.com/img/a/AVvXsEjcjc6524wR6BJSi_Ras-kIky7m7HYPCw4FpQUE5Sj4VJQtz2KUxmZ3RF1-I6qpPTaXrtyc91NR6rxbjwEQUR-uOktLAtNVlRbZyCO3h9FfzitU4R5GUyyPhMDTnnlxJ1W5rM-tMd4JasjJT1NblemmT1cxtN7GPlpn7sr5NPi-jROXVvZXEF0FYTFwRw' rel='icon' sizes='16x16' type='image/png' />
 <link href='../external.html?link=https://drive.google.com/uc?id=1iSI7faVoba8Yg7FmyVaZQ1L5EXuGLhQ5' rel='manifest' />
-<meta content='#16E2F5' name='theme-color' />
-<meta content='#16E2F5' name='msapplication-navbutton-color' />
-<meta content='yes' name='apple-mobile-web-app-capable' />
-<meta content='#16E2F5' name='apple-mobile-web-app-status-bar-style' />
-<meta content='width=device-width, user-scalable=no' name='viewport'>
-</meta>
-<meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
-<meta content='blogger' name='generator' />
-<link href='favicon.ico' rel='icon' type='image/x-icon' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <!-- favicon -->
+  <link rel="icon" sizes="192x192" href="./icon.png">
+  <!-- Home screen icon for iOS -->
+  <link rel="apple-touch-icon" href="./icon_ios.png">
+  <!-- theme-color is effective only with Android now -->
+  <meta name="theme-color" content="#29434e">
 <link href='index.html' rel='canonical' />
 <link rel="alternate" type="application/atom+xml" title="PahilaGana.in - Atom" href="feeds/posts/default" />
 <link rel="alternate" type="application/rss+xml" title="PahilaGana.in - RSS" href="feeds/posts/default9522" />
@@ -1640,26 +1638,14 @@ color: #fff;
 var message="NoRightClicking"; function defeatIE() {if (document.all) {(message);return false;}} function defeatNS(e) {if (document.layers||(document.getElementById&&!document.all)) { if (e.which==2||e.which==3) {(message);return false;}}} if (document.layers) {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=defeatNS;} else{document.onmouseup=defeatNS;document.oncontextmenu=defeatIE;} document.oncontextmenu=new Function("return false")
 
 //]]></script>
-<script>/*<![CDATA[*/ 
-  const installButton = document.getElementById("vivek_maurya");window.addEventListener("beforeinstallprompt", e => {e.preventDefault();deferredPrompt = e;installButton.hidden = false;installButton.addEventListener("click", installApp);});function installApp() {deferredPrompt.prompt();installButton.disabled = true;deferredPrompt.userChoice.then(choiceResult => {if (choiceResult.outcome === "accepted") {installButton.hidden = true;} else {}installButton.disabled = false;deferredPrompt = null;});}window.addEventListener("appinstalled", evt => {console.log("appinstalled fired", evt);});
-  /*]]>*/</script>
-<script type='text/javascript'>
-
-  //<![CDATA[
-
-  if('serviceWorker' in navigator) {
-
-    navigator.serviceWorker
-
-               .register('sw.html')
-
-                          .then(function() { console.log("Service Worker Registered"); });
-
-                          }
-
-  //]]> 
-
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js');
+    } else {
+      alert('ServiceWorker unavailable');
+    }
   </script>
+  <script src="./main.js"></script>
 <script type="text/javascript" src="../www.blogger.com/static/v1/widgets/829820975-widgets.js"></script>
 <script type='text/javascript'>
 window['__wavt'] = 'AOuZoY7pgNTNu9gDoJrosdNc75fSOai5Dw:1665432616381';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d8210896260184509547','index.html','8210896260184509547');
@@ -1686,5 +1672,5 @@ _WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'main', doc
 </script>
 </body>
 
-<!-- Mirrored from www.pahilagana.xyz/ by HTTrack Website Copier/3.x [XR&CO'2017], Mon, 10 Oct 2022 20:10:46 GMT -->
+
 </html>
